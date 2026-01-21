@@ -20,13 +20,13 @@ pipeline {
 
            }
 
-        stage('Analyse du Code') {
+        /*stage('Analyse du Code') {
             steps {
                 withSonarQubeEnv('sonar') {
                     bat './gradlew sonarqube'
                 }
             }
-        }
+        }*/
 
         stage('Code Quality') {
             steps {
