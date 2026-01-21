@@ -52,7 +52,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat './gradlew publish -PMAVEN_USER=%MAVEN_USER% -PMAVEN_PASSWORD=%MAVEN_PASSWORD%'
+                bat './gradlew publish'
             }
         }
 
