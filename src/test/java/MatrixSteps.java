@@ -1,6 +1,6 @@
-import com.example.exception.NoSquareException;
-import com.example.model.Matrix;
-import com.example.service.MatrixMathematics;
+import org.example.exception.NoSquareException;
+import org.example.model.Matrix;
+import org.example.service.MatrixMathematics;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

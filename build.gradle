@@ -7,7 +7,7 @@ plugins {
 
 }
 
-group = 'com.belhadjmaria'
+group = 'com.foudilikhadidja'
 version = '1.0'
 
 repositories {
@@ -40,11 +40,12 @@ jacocoTestReport {
 
 sonar{
     properties {
-        property "sonar.login", project.findProperty("SONAR_TOKEN")
-        property "sonar.projectKey", "tp5_buildtools"
-        property "sonar.projectName", "TP5 BuildTools"
+        property "sonar.projectKey", "tp-ogl-jenkins"
+        property "sonar.projectName", "TP OGL Jenkins"
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "b73fccbd7f4c02926e82650375fa79dc55d1cec1"
+        property "sonar.login", project.findProperty("SONAR_TOKEN")
+        property "sonar.sources", "src/main/java"
+        property "sonar.tests", "src/test/java"
         property "sonar.java.binaries", "$buildDir/classes/java/main"
         property "sonar.junit.reportPaths", "$buildDir/test-results/test"
         property "sonar.jacoco.reportPaths", "$buildDir/reports/jacoco/jacocoTestReport.xml"
@@ -59,7 +60,7 @@ publishing {
 
     repositories {
         maven {
-            url "https://mymavenrepo.com/repo/cEmjfkxugPlzLxXg1A2B/"
+            url = "https://mymavenrepo.com/repo/YC5rRYKS31PKGS9aFqlZ/"
             credentials {
                 username = project.findProperty("MAVEN_USER")
                 password = project.findProperty("MAVEN_PASSWORD")

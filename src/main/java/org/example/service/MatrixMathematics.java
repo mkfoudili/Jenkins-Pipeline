@@ -1,7 +1,7 @@
 package org.example.service;
 
-import com.example.exception.NoSquareException;
-import com.example.model.Matrix;
+import org.example.exception.NoSquareException;
+import org.example.model.Matrix;
 
 public class MatrixMathematics {
 
