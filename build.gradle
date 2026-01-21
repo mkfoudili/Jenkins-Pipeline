@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'jacoco'
     //id "com.github.spacialcircumstances.gradle-cucumber-reporting" version "0.1.25"
-    id("org.sonarqube") version "7.1.0.6387"
+    //id("org.sonarqube") version "7.1.0.6387"
     id 'maven-publish'
 
 }
@@ -24,7 +24,7 @@ dependencies {
 test {
     useJUnit()
     //finalizedBy "generateCucumberReports", "jacocoTestReport","sonar"
-    finalizedBy  "sonar"
+    //finalizedBy  "sonar"
 }
 
 
@@ -38,7 +38,7 @@ jacocoTestReport {
     }
 }
 
-sonar{
+/*sonar{
     properties {
         property "sonar.projectKey", "tp-ogl-jenkins"
         property "sonar.projectName", "TP OGL Jenkins"
@@ -50,7 +50,7 @@ sonar{
         property "sonar.junit.reportPaths", "$buildDir/test-results/test"
         property "sonar.jacoco.reportPaths", "$buildDir/reports/jacoco/jacocoTestReport.xml"
     }
-}
+}*/
 publishing {
     publications {
         mavenJava(MavenPublication) {
