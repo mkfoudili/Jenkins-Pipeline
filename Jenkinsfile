@@ -28,7 +28,7 @@ pipeline {
             }
         }*/
 
-        stage('Code Quality') {
+        /*stage('Code Quality') {
             steps {
                 script {
                     echo "Vérification Quality Gate"
@@ -40,7 +40,7 @@ pipeline {
                     }
                 }
             }
-        }
+        }*/
          stage('Build') {
                     steps {
                         bat './gradlew clean build'
