@@ -83,7 +83,7 @@ pipeline {
         failure {
             echo "Échec dans une ou plusieurs phases"
             slackSend(
-                channel: '#general',
+                channel: '#tp-failure',
                 color: 'danger',
                 message: "Pipeline échoué !",
                 tokenCredentialId: 'slack-bot-token'
